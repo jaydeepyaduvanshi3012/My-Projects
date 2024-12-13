@@ -1,0 +1,10 @@
+{
+  "MedInc": 4.5, (median inc in block)
+  "HouseAge": 30.0, (median age of houses in block)
+  "AveRooms": 5.2,(avg numb of rooms per household)
+  "AveBedrms": 1.0,(avg numb of bedrooms per house)
+  "Population": 1500.0,(population of the block)
+  "AveOccup": 3.0,(avg numb of occupants per house)
+  "Latitude": 34.05,(geographical latitude of the block)
+  "Longitude": -118.25(geo longitude)
+}

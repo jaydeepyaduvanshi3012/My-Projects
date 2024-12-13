@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>California House Price Prediction</h1>
+
+        <form action="/predict" method="POST">
+            <div class="form-group">
+                <label for="MedInc">Median Income:</label>
+                <input type="text" id="MedInc" name="MedInc" required>
+            </div>
+
+            <div class="form-group">
+                <label for="HouseAge">House Age:</label>
+                <input type="text" id="HouseAge" name="HouseAge" required>
+            </div>
+
+            <div class="form-group">
+                <label for="AveRooms">Average Rooms:</label>
+                <input type="text" id="AveRooms" name="AveRooms" required>
+            </div>
+
+            <div class="form-group">
+                <label for="AveBedrms">Average Bedrooms:</label>
+                <input type="text" id="AveBedrms" name="AveBedrms" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Population">Population:</label>
+                <input type="text" id="Population" name="Population" required>
+            </div>
+
+            <div class="form-group">
+                <label for="AveOccup">Average Occupancy:</label>
+                <input type="text" id="AveOccup" name="AveOccup" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Latitude">Latitude:</label>
+                <input type="text" id="Latitude" name="Latitude" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Longitude">Longitude:</label>
+                <input type="text" id="Longitude" name="Longitude" required>
+            </div>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        <div class="prediction">
+            <h2>{{ prediction_text }}</h2>
+        </div>
+    </div>
+</body>
+</html>
